@@ -1,0 +1,53 @@
+1. Customers Table (customers.csv)
+This table stores information about hotel customers.
+
+Column	Description
+customer_id	Unique identifier for each customer (primary key)
+first_name	First name of the customer
+last_name	Last name of the customer
+email	Email address of the customer
+phone_number	Contact number of the customer
+address	Residential address of the customer
+city	City where the customer resides
+country	Country of the customer
+created_at	Date when the customer was added to the database
+2. Hotels Table (hotels.csv)
+This table stores information about the hotels.
+
+Column	Description
+hotel_id	Unique identifier for each hotel (primary key)
+hotel_name	Name of the hotel
+hotel_address	Address of the hotel
+city	City where the hotel is located
+country	Country where the hotel is located
+rating	Average rating of the hotel (out of 5)
+total_rooms	Number of rooms available in the hotel
+3. Rooms Table (rooms.csv)
+This table stores information about hotel rooms.
+
+Column	Description
+room_id	Unique identifier for each room (primary key)
+hotel_id	Identifier of the hotel to which the room belongs (foreign key)
+room_type	Type of room (e.g., Single, Double, Suite)
+availability	Whether the room is currently available (Yes/No)
+price_per_night	Price of the room per night
+4. Reservations Table (reservations.csv)
+This table stores customer reservation information.
+
+Column	Description
+reservation_id	Unique identifier for each reservation (primary key)
+customer_id	Identifier of the customer who made the reservation (foreign key)
+hotel_id	Identifier of the hotel where the reservation was made (foreign key)
+room_id	Identifier of the room booked for the reservation (foreign key)
+check_in	Date of check-in
+check_out	Date of check-out
+total_price	Total price for the stay
+booking_date	Date when the booking was made
+5. Booking History Table (booking_history.csv)
+This table stores historical data about customer reservations.
+
+Column	Description
+history_id	Unique identifier for each booking record (primary key)
+reservation_id	Identifier of the reservation (foreign key)
+status	Status of the booking (e.g., Completed, Cancelled, No-show)
+last_updated	Date when the status was last updated

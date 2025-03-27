@@ -1,0 +1,14 @@
+# Project Overview:
+Developed a comprehensive SQL project on a hotel reservation dataset to analyze customer booking patterns, identify trends, and optimize hotel operations.
+
+# Key Features:
+Designed and normalized relational database tables to ensure data consistency.
+
+Executed complex SQL queries using JOIN, GROUP BY, and AGGREGATE functions to derive insights.
+
+Analyzed booking behavior, cancellation rates, and revenue trends using SQL queries.
+
+Implemented stored procedures and views to automate data retrieval and enhance query efficiency.
+
+# Project Goal:
+To manage hotel reservations efficiently, support data-driven decision-making, and improve overall hotel operations.
